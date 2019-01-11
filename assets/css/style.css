@@ -1,0 +1,16 @@
+body {
+    background-image: url("../images/swirl_pattern.png");
+    background-repeat: repeat-x repeat-y;
+    min-height: 2000px;
+}
+
+#directions {
+    font-size: 9pt;
+    font-weight: bold;
+    line-height: 1.75;
+}
+
+#randomNumber, #yourScore {
+    font-size: 30pt;
+    font-weight: bold;
+}
