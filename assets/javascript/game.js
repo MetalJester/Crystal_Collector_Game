@@ -21,7 +21,7 @@ $(document).ready(function () {
         console.log(crystalNum1);
         score = score += crystalNum1;
         $("#yourScore").text(score);
-
+        
     });
 
     $("#crystal-02").on("click", function () {
@@ -45,8 +45,19 @@ $(document).ready(function () {
 
     });
 
+    if (score === computerNumber) {
+        alert("You won!");
+        numWon++;
+        $("#win").html("Wins: " + numWon);
+    } else if (score > computerNumber) {
+        alert("You lost!");
+        numLost++;
+        $("#lose").html("Losses: " + numLost);
+    }
+
+    
 
 })
 
-    
+
 
