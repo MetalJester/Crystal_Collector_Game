@@ -55,10 +55,12 @@ $(document).ready(function () {
             alert("You won!");
             numWon++;
             $("#win").html("Wins: " + numWon);
+            resetGame();
         } else if (score > computerNumber) {
             alert("You lost!");
             numLost++;
             $("#lose").html("Losses: " + numLost);
+            resetGame();
         }
 
     });
@@ -71,10 +73,12 @@ $(document).ready(function () {
             alert("You won!");
             numWon++;
             $("#win").html("Wins: " + numWon);
+            resetGame();
         } else if (score > computerNumber) {
             alert("You lost!");
             numLost++;
             $("#lose").html("Losses: " + numLost);
+            resetGame();
         }
 
     });
@@ -87,10 +91,12 @@ $(document).ready(function () {
             alert("You won!");
             numWon++;
             $("#win").html("Wins: " + numWon);
+            resetGame();
         } else if (score > computerNumber) {
             alert("You lost!");
             numLost++;
             $("#lose").html("Losses: " + numLost);
+            resetGame();
         }
 
     });
