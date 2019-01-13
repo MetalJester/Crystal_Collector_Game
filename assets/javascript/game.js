@@ -34,12 +34,12 @@ $(document).ready(function () {
         score = score += crystalNum1;
         $("#yourScore").text(score);
         if (score === computerNumber) {
-            alert("You won!");
+            alert("You won! Can you do it again?");
             numWon++;
             $("#win").html("Wins: " + numWon);
             resetGame();
         } else if (score > computerNumber) {
-            alert("You lost!");
+            alert("You lost! Try again.");
             numLost++;
             $("#lose").html("Losses: " + numLost);
             resetGame();
@@ -52,12 +52,12 @@ $(document).ready(function () {
         score = score += crystalNum2;
         $("#yourScore").text(score);
         if (score === computerNumber) {
-            alert("You won!");
+            alert("You won! Can you do it again?");
             numWon++;
             $("#win").html("Wins: " + numWon);
             resetGame();
         } else if (score > computerNumber) {
-            alert("You lost!");
+            alert("You lost! Try again.");
             numLost++;
             $("#lose").html("Losses: " + numLost);
             resetGame();
@@ -70,12 +70,12 @@ $(document).ready(function () {
         score = score += crystalNum3;
         $("#yourScore").text(score);
         if (score === computerNumber) {
-            alert("You won!");
+            alert("You won! Can you do it again?");
             numWon++;
             $("#win").html("Wins: " + numWon);
             resetGame();
         } else if (score > computerNumber) {
-            alert("You lost!");
+            alert("You lost! Try again.");
             numLost++;
             $("#lose").html("Losses: " + numLost);
             resetGame();
@@ -93,7 +93,7 @@ $(document).ready(function () {
             $("#win").html("Wins: " + numWon);
             resetGame();
         } else if (score > computerNumber) {
-            alert("You lost!");
+            alert("You lost! Try again.");
             numLost++;
             $("#lose").html("Losses: " + numLost);
             resetGame();
