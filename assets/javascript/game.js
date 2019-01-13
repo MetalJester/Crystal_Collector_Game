@@ -53,10 +53,8 @@ $(document).ready(function () {
         $("#yourScore").text(score);
         if (score === computerNumber) {
             winGame();
-            resetGame();
         } else if (score > computerNumber) {
             loseGame();
-            resetGame();
         }
 
     });
@@ -67,10 +65,8 @@ $(document).ready(function () {
         $("#yourScore").text(score);
         if (score === computerNumber) {
             winGame();
-            resetGame();
         } else if (score > computerNumber) {
             loseGame();
-            resetGame();
         }
 
     });
@@ -81,10 +77,8 @@ $(document).ready(function () {
         $("#yourScore").text(score);
         if (score === computerNumber) {
             winGame();
-            resetGame();
         } else if (score > computerNumber) {
             loseGame();
-            resetGame();
         }
 
     });
@@ -95,10 +89,8 @@ $(document).ready(function () {
         $("#yourScore").text(score);
         if (score === computerNumber) {
             winGame();
-            resetGame();
         } else if (score > computerNumber) {
             loseGame();
-            resetGame();
         }
 
     });
