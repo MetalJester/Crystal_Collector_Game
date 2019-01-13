@@ -30,21 +30,32 @@ $(document).ready(function () {
         console.log(crystalNum1, crystalNum2, crystalNum3, crystalNum4); // developer check
     };
 
+    // sets the function for when the game is won
+    function winGame() {
+        $('audio#audioWin')[0].play();
+        alert("You won!");
+        numWon++;
+        $("#win").html("Wins: " + numWon);
+        resetGame();
+    }
+    // sets the function for when the game is lost
+    function loseGame() {
+        $('audio#audioLose')[0].play();
+        alert("You lost!");
+        numLost++;
+        $("#lose").html("Losses: " + numLost);
+        resetGame();
+    }
+
     $("#crystal-01").on("click", function () {
         console.log(crystalNum1);
         score = score += crystalNum1;
         $("#yourScore").text(score);
         if (score === computerNumber) {
-            $('audio#audioWin')[0].play();
-            alert("You won! Can you do it again?");
-            numWon++;
-            $("#win").html("Wins: " + numWon);
+            winGame();
             resetGame();
         } else if (score > computerNumber) {
-            $('audio#audioLose')[0].play();
-            alert("You lost! Try again.");
-            numLost++;
-            $("#lose").html("Losses: " + numLost);
+            loseGame();
             resetGame();
         }
 
@@ -55,16 +66,10 @@ $(document).ready(function () {
         score = score += crystalNum2;
         $("#yourScore").text(score);
         if (score === computerNumber) {
-            $('audio#audioWin')[0].play();
-            alert("You won! Can you do it again?");
-            numWon++;
-            $("#win").html("Wins: " + numWon);
+            winGame();
             resetGame();
         } else if (score > computerNumber) {
-            $('audio#audioLose')[0].play();
-            alert("You lost! Try again.");
-            numLost++;
-            $("#lose").html("Losses: " + numLost);
+            loseGame();
             resetGame();
         }
 
@@ -75,16 +80,10 @@ $(document).ready(function () {
         score = score += crystalNum3;
         $("#yourScore").text(score);
         if (score === computerNumber) {
-            $('audio#audioWin')[0].play();
-            alert("You won! Can you do it again?");
-            numWon++;
-            $("#win").html("Wins: " + numWon);
+            winGame();
             resetGame();
         } else if (score > computerNumber) {
-            $('audio#audioLose')[0].play();
-            alert("You lost! Try again.");
-            numLost++;
-            $("#lose").html("Losses: " + numLost);
+            loseGame();
             resetGame();
         }
 
@@ -95,16 +94,10 @@ $(document).ready(function () {
         score = score += crystalNum4;
         $("#yourScore").text(score);
         if (score === computerNumber) {
-            $('audio#audioWin')[0].play();
-            alert("You won!");
-            numWon++;
-            $("#win").html("Wins: " + numWon);
+            winGame();
             resetGame();
         } else if (score > computerNumber) {
-            $('audio#audioLose')[0].play();
-            alert("You lost! Try again.");
-            numLost++;
-            $("#lose").html("Losses: " + numLost);
+            loseGame();
             resetGame();
         }
 
