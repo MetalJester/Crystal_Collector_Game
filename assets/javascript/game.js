@@ -21,6 +21,15 @@ $(document).ready(function () {
         console.log(crystalNum1);
         score = score += crystalNum1;
         $("#yourScore").text(score);
+        if (score === computerNumber) {
+            alert("You won!");
+            numWon++;
+            $("#win").html("Wins: " + numWon);
+        } else if (score > computerNumber) {
+            alert("You lost!");
+            numLost++;
+            $("#lose").html("Losses: " + numLost);
+        }
         
     });
 
@@ -28,6 +37,15 @@ $(document).ready(function () {
         console.log(crystalNum2);
         score = score += crystalNum2;
         $("#yourScore").text(score);
+        if (score === computerNumber) {
+            alert("You won!");
+            numWon++;
+            $("#win").html("Wins: " + numWon);
+        } else if (score > computerNumber) {
+            alert("You lost!");
+            numLost++;
+            $("#lose").html("Losses: " + numLost);
+        }
 
     });
 
@@ -35,6 +53,15 @@ $(document).ready(function () {
         console.log(crystalNum3);
         score = score += crystalNum3;
         $("#yourScore").text(score);
+        if (score === computerNumber) {
+            alert("You won!");
+            numWon++;
+            $("#win").html("Wins: " + numWon);
+        } else if (score > computerNumber) {
+            alert("You lost!");
+            numLost++;
+            $("#lose").html("Losses: " + numLost);
+        }
 
     });
 
@@ -42,18 +69,19 @@ $(document).ready(function () {
         console.log(crystalNum4);
         score = score += crystalNum4;
         $("#yourScore").text(score);
+        if (score === computerNumber) {
+            alert("You won!");
+            numWon++;
+            $("#win").html("Wins: " + numWon);
+        } else if (score > computerNumber) {
+            alert("You lost!");
+            numLost++;
+            $("#lose").html("Losses: " + numLost);
+        }
 
     });
 
-    if (score === computerNumber) {
-        alert("You won!");
-        numWon++;
-        $("#win").html("Wins: " + numWon);
-    } else if (score > computerNumber) {
-        alert("You lost!");
-        numLost++;
-        $("#lose").html("Losses: " + numLost);
-    }
+    
 
     
 
