@@ -17,6 +17,18 @@ $(document).ready(function () {
 
     $("#randomNumber").text(computerNumber);// calls html location inserts the random number that is player's goal
 
+    function resetGame() {
+        score = 0; // resets the player's score
+        computerNumber = Math.floor((Math.random() * 102) + 19);
+        $("#yourScore").text(score);
+        $("#randomNumber").text(computerNumber);
+        crystalNum1 = Math.floor((Math.random() * 12) + 1);
+        crystalNum2 = Math.floor((Math.random() * 12) + 1);
+        crystalNum3 = Math.floor((Math.random() * 12) + 1);
+        crystalNum4 = Math.floor((Math.random() * 12) + 1);
+        console.log(crystalNum1, crystalNum2, crystalNum3, crystalNum4); // developer check
+    };
+
     $("#crystal-01").on("click", function () {
         console.log(crystalNum1);
         score = score += crystalNum1;
@@ -25,12 +37,14 @@ $(document).ready(function () {
             alert("You won!");
             numWon++;
             $("#win").html("Wins: " + numWon);
+            resetGame();
         } else if (score > computerNumber) {
             alert("You lost!");
             numLost++;
             $("#lose").html("Losses: " + numLost);
+            resetGame();
         }
-        
+
     });
 
     $("#crystal-02").on("click", function () {
@@ -81,9 +95,9 @@ $(document).ready(function () {
 
     });
 
-    
 
-    
+
+
 
 })
 
