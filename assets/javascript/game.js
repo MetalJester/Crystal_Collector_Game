@@ -18,13 +18,35 @@ $(document).ready(function () {
     $("#randomNumber").text(computerNumber);// calls html location inserts the random number that is player's goal
 
     $("#crystal-01").on("click", function () {
-        $("#crystal-01").on("click", function () {
-            console.log(crystalNum1);
-            score = score += crystalNum1;
-            $("#yourScore").text(score);
+        console.log(crystalNum1);
+        score = score += crystalNum1;
+        $("#yourScore").text(score);
 
-        });
+    });
+
+    $("#crystal-02").on("click", function () {
+        console.log(crystalNum2);
+        score = score += crystalNum2;
+        $("#yourScore").text(score);
+
+    });
+
+    $("#crystal-03").on("click", function () {
+        console.log(crystalNum3);
+        score = score += crystalNum3;
+        $("#yourScore").text(score);
+
+    });
+
+    $("#crystal-04").on("click", function () {
+        console.log(crystalNum4);
+        score = score += crystalNum4;
+        $("#yourScore").text(score);
+
+    });
 
 
-    })
 })
+
+    
+
