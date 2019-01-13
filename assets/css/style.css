@@ -1,7 +1,9 @@
 body {
-    background-image: url("../images/swirl_pattern.png");
-    background-repeat: repeat-x repeat-y;
-    min-height: 2000px;
+    background-image: url("../images/backgrounds/D_crystals_eiskristalle_cold_ice_0.jpg");
+   /*background-repeat: repeat-x repeat-y;*/
+   max-width: 100%;
+   height: auto;
+
 }
 
 #directions {
