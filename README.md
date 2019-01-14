@@ -6,6 +6,6 @@ Create a matching number by clicking on the crystals.
 Your number will be displayed on the screen.
 Each time you click on a crystal the corresponding number will be added to your total.
 If you can get to the number without going over then you win.
-Crystal images provided by Free-Images.com
+Crystal images and background image provided by Free-Images.com
 Wrong answer sound effect source: http://www.orangefreesounds.com/wrong-answer-sound-effect/
 Winning answer sound effect source: http://www.pacdv.com/sounds/voices/woohoo.wav
