@@ -42,39 +42,41 @@
         <br>
 
         <div class="wrapper bg-white p-2 rounded">
-            <div class="row">
-                <div class="col">
-                    <div id="directions" class="card font-bold text-info border-0">
-                        You will be given a random number at the start of the game.
-                        <br>
-                        There are four crystals below.
-                        By clicking on a crystal you will add a specific amount of points to your total score.
-                        <br>
-                        You win the game by matching your total score to the random number.
-                        But if your total score goes above the random number, then you lose.
-                        <br>
-                        The value of each crystal is hidden from you until you click on it.
-                        <br>
-                        Every time you win or lose, the game will generate a new random number for you to guess.
-                        The values of the crystals will also change with each new generation.
-                    </div>
+            <div class="d-flex flex-column-8 justify-content-center ">
+
+                <div class="col-1"></div>
+                <div id="directions" class="font-bold mt-2 text-info border-0">
+                    You will be given a random number at the start of the game. There are four crystals below. By
+                    clicking on a crystal you will add a specific amount of points to your total score. The value of
+                    each crystal is hidden from you until you click on it.
+                    <br>
+                    You win the game by matching your total score to the random number. But if your total score goes
+                    above the random number, then you lose.
+                    <br>
+                    Every time you win or lose, the game will generate a new random number for you to guess. The values
+                    of the crystals will also change with each new generation.
                 </div>
+                <div class="col-1"></div>
+
+
+
             </div>
 
-            <div class="row">
-                <div class="col-md-3">
+            <div class="d-flex justify-content-center">
+                <div class="col-1"></div>
+                <div class="col-lg-3">
                     <div class="card bg-info mt-3">
                         <div class="text-white text-center">Match this number to win:</div>
                         <div class="text-white text-center pb-1" id="randomNumber">0</div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3">
                     <div class="card bg-info mt-3">
                         <div class="text-white text-center">Your current score:</div>
                         <div class="text-white text-center pb-1" id="yourScore">0</div>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-lg-3">
                     <div class="card bg-info mt-3">
                         <div class="text-white" id="scorecard">
                             <p class="pt-2 pl-2" id="win">Wins: 0</p>
@@ -83,28 +85,36 @@
                     </div>
 
                 </div>
+                <div class="col-1"></div>
 
             </div>
             <br>
-            <div class="row">
-                <div class="col-lg-12 border-info pt-2 pb-2">
 
-                    <img id="crystal-01" class="crystal img-fluid" src="assets/images/01 Clear Crystal.jpg">
-                    <img id="crystal-02" class="crystal img-fluid" src="assets/images/02 Purple Crystal Cluster.jpg">
-                    <img id="crystal-03" class="crystal img-fluid" src="assets/images/03 Orange Crystal.jpg">
-                    <img id="crystal-04" class="crystal img-fluid" src="assets/images/04 Amethyst.jpg">
+            <div class="col-1"></div>
+            <div class="d-flex flex-column-10 justify-content-center">
+
+
+                <div class="row ml-5 mr-2 mt-2 mb-2">
+
+                    <img id="crystal-01" class="img-fluid p-1" src="assets/images/01 Clear Crystal.jpg">
+                    <img id="crystal-02" class="img-fluid p-1" src="assets/images/02 Purple Crystal Cluster.jpg">
+                    <img id="crystal-03" class="img-fluid p-1" src="assets/images/03 Orange Crystal.jpg">
+                    <img id="crystal-04" class="img-fluid p-1" src="assets/images/04 Amethyst.jpg">
 
 
                 </div>
 
             </div>
-
-
+            <div class="col-1"></div>
         </div>
 
 
+
     </div>
+
     <script src="assets/javascript/game.js"></script>
+
+
 </body>
 
 
