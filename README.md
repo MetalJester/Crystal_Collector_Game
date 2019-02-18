@@ -1,4 +1,5 @@
-# Crystal Collector GAme
+# Crystal Collector Game
+Link: https://metaljester.github.io/Crystal_Collector_Game/.
 This is a number guessing game. 
 The computer will pick a random number between 19 and 120 and display it on the screen. 
 Each crystal represents a random number between 1 and 12.
